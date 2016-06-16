@@ -1,0 +1,24 @@
+allprojects {
+
+    apply plugin: 'java'
+
+    project.ext {
+        configPath = '$rootProject.projectDir/config/'
+        javaParserVersion = '2.1.0'
+        jUnitVersion = '4.12'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+
+        compile "com.github.javaparser:javaparser-core:$javaParserVersion"
+
+        testCompile "junit:junit:$jUnitVersion"
+
+    }
+}
+
+project(':java-report') { }

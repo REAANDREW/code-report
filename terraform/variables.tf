@@ -28,5 +28,5 @@ variable "aws_amis" {
 
 variable "project" {
     description = "The project name to tag for the resource group"
-    default = "forora.com"
+    default = "something"
 }
